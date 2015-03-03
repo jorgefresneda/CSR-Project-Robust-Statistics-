@@ -1,0 +1,1184 @@
+# Regular and robust analyses
+
+solu<-glm(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data = s)
+
+
+109                5.33      2                       0.55723    0.84899
+110                4.00      2                      -1.06399   -0.74244
+111                4.00      2                      -1.73695   -0.98852
+112                4.00      2                      -1.00281    0.16972
+113                5.67      2                       1.15433    0.71314
+114                5.00      2                      -0.14632   -0.16021
+115                6.00      2                       0.55723   -0.50954
+116                4.00      2                      -0.39103    0.84899
+117                1.00      2                      -1.72961   -2.52794
+118                4.00      2                       0.25134    0.84899
+119                4.00      1                      -0.72017   -0.64540
+120                6.00      2                       0.89371    0.84899
+121                4.00      2                      -0.88046   -1.55756
+122                4.00      2                      -0.14632    0.84899
+123                4.00      2                       0.19750    0.07268
+124                6.00      2                       0.67958    0.84899
+125                4.67      2                       0.19750    0.66811
+126                4.00      2                      -1.24753   -0.78125
+127                5.00      2                       0.72608    0.30558
+128                6.00      2                      -1.12517   -0.62599
+129                3.67      2                       0.19750    0.71314
+130                4.00      2                      -0.51339   -2.17860
+131                4.00      2                      -0.12307    0.71314
+132                6.33      2                       0.67958    0.30558
+133                7.00      2                       0.25134    0.84899
+134                4.00      2                      -0.94898   -2.87727
+135                6.00      2                       0.03721   -1.09177
+136                7.00      2                       0.89371    0.84899
+137                4.33      2                       0.58782    0.30558
+138                1.00      2                      -1.85931   -0.62599
+139                4.67      2                       0.89371   -0.78125
+140                4.33      1                      -1.62928    0.57728
+    ZAbility_to_construe
+1                0.71707
+2               -0.23895
+3                0.23546
+4               -0.72056
+5               -0.48335
+6               -0.00175
+7                1.19867
+8                1.43588
+9                1.43588
+10               0.71707
+11              -0.72056
+12              -0.48335
+13               0.71707
+14               0.71707
+15               1.43588
+16               0.95427
+17               1.19867
+18               1.43588
+19               1.43588
+20              -0.48335
+21              -0.72056
+22              -0.72056
+23              -0.00175
+24               1.43588
+25              -0.72056
+26               0.23546
+27              -0.72056
+28              -0.95777
+29              -0.23895
+30              -0.00175
+31              -0.95777
+32              -0.23895
+33              -0.72056
+34              -0.00175
+35               1.43588
+36               1.43588
+37              -0.72056
+38              -0.72056
+39               0.23546
+40              -0.23895
+41              -0.72056
+42              -0.00175
+43              -0.00175
+44               0.71707
+45              -0.72056
+46               1.43588
+47               1.43588
+48              -0.72056
+49               1.43588
+50              -0.72056
+51               0.71707
+52               1.43588
+53               1.43588
+54              -2.87699
+55              -0.72056
+56              -1.43937
+57               0.71707
+58              -0.72056
+59               0.47986
+60              -0.00175
+61               1.43588
+62               0.23546
+63              -1.92097
+64               1.43588
+65               0.47986
+66               1.43588
+67              -0.72056
+68              -0.72056
+69              -0.72056
+70              -0.72056
+71              -1.43937
+72              -0.72056
+73              -0.00175
+74              -0.00175
+75              -0.72056
+76               0.71707
+77              -0.72056
+78               1.43588
+79              -0.23895
+80               1.43588
+81              -0.48335
+82               0.71707
+83              -0.72056
+84               0.71707
+85              -2.87699
+86               1.43588
+87               1.43588
+88               0.71707
+89              -0.72056
+90               0.47986
+91              -0.48335
+92               0.47986
+93               0.71707
+94              -0.23895
+95              -0.00175
+96              -0.00175
+97               0.23546
+98               0.71707
+99               0.23546
+100             -0.72056
+101              0.71707
+102              0.71707
+103              1.43588
+104             -0.72056
+105             -0.72056
+106             -0.00175
+107              0.47986
+108             -2.87699
+109              0.23546
+110             -0.72056
+111             -0.72056
+112             -0.72056
+113              0.47986
+114             -0.00175
+115              0.71707
+116             -0.72056
+117             -2.87699
+118             -0.72056
+119             -0.72056
+120              0.71707
+121             -0.72056
+122             -0.72056
+123             -0.72056
+124              0.71707
+125             -0.23895
+126             -0.72056
+127             -0.00175
+128              0.71707
+129             -0.95777
+130             -0.72056
+131             -0.72056
+132              0.95427
+133              1.43588
+134             -0.72056
+135              0.71707
+136              1.43588
+137             -0.48335
+138             -2.87699
+139             -0.23895
+140             -0.48335
+
+hsb2$race.f <- factor(hsb2$race)
+
+Call:  glm(formula = Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+    OrgIDXFit + Ability_to_construe + Gender.f, family = binomial(link = "logit"), 
+    data = s)
+
+Coefficients:
+                 (Intercept)  EmployeeCSRimpXCustomCSRsupp  
+                   -0.671258                      0.001819  
+                   OrgIDXFit           Ability_to_construe  
+                    0.046908                      0.288692  
+                   Gender.f2  
+                   -0.794528  
+
+Degrees of Freedom: 139 Total (i.e. Null);  135 Residual
+Null Deviance:         103.5 
+Residual Deviance: 89.16    AIC: 99.16 
+
+> summary(solu)
+
+Call:
+glm(formula = Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+    OrgIDXFit + Ability_to_construe + Gender.f, family = binomial(link = "logit"), 
+    data = s)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.5242   0.2644   0.3410   0.5084   1.0695  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)                  -0.671258   1.285206  -0.522   0.6015  
+EmployeeCSRimpXCustomCSRsupp  0.001819   0.046044   0.039   0.9685  
+OrgIDXFit                     0.046908   0.021246   2.208   0.0273 *
+Ability_to_construe           0.288692   0.226525   1.274   0.2025  
+Gender.f2                    -0.794528   0.558439  -1.423   0.1548  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 103.533  on 139  degrees of freedom
+Residual deviance:  89.157  on 135  degrees of freedom
+AIC: 99.157
+
+Number of Fisher Scoring iterations: 5
+
+chuber<-1.2
+
+B<-glm.rob(as.matrix(s[,c(2,3,4,5)]),as.matrix(s[,c(1)]),choice="logit")
+
+
+library(foreign)
+s<-read.csv(file="Standard.csv", header=TRs<-read.csv(file="Standard.csv", header=TRUE, sep=",")
+s<-read.csv(file="Standard.csv", header=TRUE, sep=",")
+library(MASS)
+library(arm)
+chiber<-1.2
+chuber<-1.2
+help(glm.rob)
+getwd()
+s<-read(file="Standard.csv", header=TRUE, sep=",")
+help(read)
+s<-read.csv(file="Standard.csv", header=TRUE, sep=",")
+read.table
+s<-read.table(file="Standard.csv", header=TRUE, sep=",")
+s
+solu<-glm(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial(link = "logit"), data = s)
+solu
+solu<-glm(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data = s)
+s$Gender.f<-factor(s$Gender)
+solu<-glm(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data = s)
+ls(s)
+objects(s)
+ls
+objects
+ls(all.names = TRUE)
+
+install.packages("RWinEdt")
+library ("RWinEdt")
+startWinEdt(.gW$InstallRoot, .gW$ApplData, .gW$WinEdtVersion)
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+utils:::menuInstallPkgs()
+utils:::menuInstallPkgs()
+library(foreign)
+s<-read.csv(file="Standard.csv", header=TRUE, sep=",")
+getwd()
+ s<-read.csv(file="Standard.csv", header=TRUE, sep=",")
+s
+s$Gender.f<-factor(s$Gender)
+solu<-glm(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+    OrgIDXFit + Ability_to_construe + Gender.f, family = binomial(link = "logit"), 
+    data = s)
+solu
+summary(solu)
+chuber<-1.2
+B<-glm.rob(as.matrix(s[,c(2,3,4,5)]),as.matrix(s[,c(1)]),choice="logit")
+local({pkg <- select.list(sort(.packages(all.available = TRUE)),graphics=TRUE)
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+ B<-glm.rob(as.matrix(s[,c(2,3,4,5)]),as.matrix(s[,c(1)]),choice="logit")
+B<-glm.rob(as.matrix(s[,c(2,3,4,5)]),as.matrix(s[,c(1)]),choice="logit")
+ B<-glm.Rob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
++ OrgIDXFit + Ability_to_construe + Gender.f, family = binomial)
+ B<-glm.Rob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+if(nchar(pkg)) library(pkg, character.only=TRUE)})
+B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial)
+B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s)
+B
+s<-read.csv(file="Standard2.csv", header=TRUE, sep=",")
+s
+B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s)
+s$Gender.f<-factor(s$Gender)
+B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s)
+B
+s<-read.csv(file="Standard3.csv", header=TRUE, sep=",")
+s$Gender.f<-factor(s$Gender)
+B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s)
+B
+ B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s, method="mallows")
+B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s, method="misclass")
+utils:::menuInstallPkgs()
+
+
+> library (robust)
+
+> getwd()
+[1] "C:/Users/Owner/Desktop/New folder"
+
+> s<-read.csv(Standard7)
+
+> s<-read.csv(Standard7.csv)
+
+> getwd()
+[1] "C:/Users/Owner/Desktop/New folder"
+
+> s<-read.csv(file="Standard7.csv", header=TRUE, sep=",")
+
+> s$Gender.f<-factor(s$Gender)
+
+> B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s)
+
+> summary(B)
+
+Call: glmRob(formula = Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+    OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, 
+    data = s)
+Deviance Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.5875  0.2313  0.3193  0.4376  0.9460 
+
+Coefficients:
+                             Estimate Std. Error z value Pr(>|z|)
+(Intercept)                  -1.04335    1.81262 -0.5756   0.5649
+EmployeeCSRimpXCustomCSRsupp  0.04026    0.05870  0.6859   0.4928
+OrgIDXFit                     0.04117    0.02726  1.5101   0.1310
+Ability_to_construe           0.18454    0.32679  0.5647   0.5723
+Gender.f2                    -0.76365    0.76855 -0.9936   0.3204
+
+(Dispersion Parameter for binomial family taken to be 1 )
+
+    Null Deviance: 124.8 on 89 degrees of freedom
+
+Residual Deviance: 50.60741 on 85 degrees of freedom
+
+Number of Iterations: 5 
+
+Correlation of Coefficients:
+                             (Intercept) EmployeeCSRimpXCustomCSRsupp OrgIDXFit
+EmployeeCSRimpXCustomCSRsupp -0.49051                                          
+OrgIDXFit                    -0.06531    -0.36948                              
+Ability_to_construe          -0.55309    -0.28799                     -0.05931 
+Gender.f2                    -0.21121     0.01407                      0.01495 
+                             Ability_to_construe
+EmployeeCSRimpXCustomCSRsupp                    
+OrgIDXFit                                       
+Ability_to_construe                             
+Gender.f2                     0.03890           
+
+> s
+   Bin_CSR_Adap_sell EmployeeCSRimpXCustomCSRsupp OrgIDXFit Ability_to_construe
+1                  1                        30.88     42.00                6.00
+2                  1                        49.00     49.00                4.67
+3                  0                        15.19     17.33                5.33
+4                  1                        20.00     22.50                4.00
+5                  1                        24.94     49.00                4.33
+6                  1                        30.19     49.00                5.00
+7                  1                        36.75     47.25                6.67
+8                  1                        49.00     49.00                7.00
+9                  1                        47.25     38.50                7.00
+10                 1                        42.00     42.00                6.00
+11                 1                        30.00     49.00                4.00
+12                 1                        37.13     49.00                4.33
+13                 1                        34.13     49.00                6.00
+14                 1                        33.75     44.33                6.00
+15                 1                        33.75     49.00                7.00
+16                 1                        34.13     44.33                6.33
+17                 1                        45.56     47.25                6.67
+18                 1                        38.81     42.00                7.00
+19                 1                        35.44     40.25                7.00
+20                 1                        31.25     43.75                4.33
+21                 1                        24.75     23.33                4.00
+22                 0                        30.00     12.00                4.00
+23                 0                        24.38     49.00                5.00
+24                 1                        38.50     49.00                7.00
+25                 1                        23.75      5.00                4.00
+26                 1                        42.00     41.67                5.33
+27                 1                        20.00      1.75                4.00
+28                 1                        25.00     42.00                3.67
+29                 1                        30.25     47.25                4.67
+30                 1                        28.50     32.00                5.00
+31                 1                        27.00     49.00                3.67
+32                 1                        26.00     49.00                4.67
+33                 1                        37.13     49.00                4.00
+34                 1                        27.00     43.75                5.00
+35                 1                        38.50     42.00                7.00
+36                 1                        49.00     49.00                7.00
+37                 1                        22.50     42.00                4.00
+38                 1                        28.00     24.00                4.00
+39                 1                        37.50     49.00                5.33
+40                 1                        16.88     40.25                4.67
+41                 1                        28.00     49.00                4.00
+42                 1                        47.25     49.00                5.00
+43                 1                        30.38      5.67                5.00
+44                 1                        30.38     22.17                6.00
+45                 1                        15.75     49.00                4.00
+46                 1                        27.31     49.00                7.00
+47                 1                        47.25     35.00                7.00
+48                 1                        21.00     20.00                4.00
+49                 1                        31.63     49.00                7.00
+50                 1                        25.00     20.00                4.00
+51                 1                        40.63     36.00                6.00
+52                 1                        43.75     49.00                7.00
+53                 1                        49.00     49.00                7.00
+54                 1                        38.50     49.00                1.00
+55                 1                        16.88     36.00                4.00
+56                 1                        31.50     42.00                3.00
+57                 1                        15.81     18.67                6.00
+58                 1                        33.25     49.00                4.00
+59                 1                        17.25     17.33                5.67
+60                 1                        33.25     36.75                5.00
+61                 1                        38.50     49.00                7.00
+62                 0                        31.50     29.75                5.33
+63                 1                        33.75     12.25                2.33
+64                 1                        45.50     49.00                7.00
+65                 1                        31.25     33.25                5.67
+66                 0                        38.50     36.75                7.00
+67                 1                        31.25     43.75                4.00
+68                 0                        23.38     33.00                4.00
+69                 1                        21.25     49.00                4.00
+70                 1                        30.00     28.00                4.00
+71                 1                        38.50     49.00                3.00
+72                 1                        40.25     49.00                4.00
+73                 1                        28.00     38.50                5.00
+74                 1                        29.25     10.00                5.00
+75                 0                        30.88     19.50                4.00
+76                 1                        38.50     49.00                6.00
+77                 1                        23.63     18.75                4.00
+78                 1                        40.25     49.00                7.00
+79                 1                        30.00     18.00                4.67
+80                 1                        40.25     49.00                7.00
+81                 1                        25.00     30.00                4.33
+82                 1                        38.50     49.00                6.00
+83                 0                        25.00     12.25                4.00
+84                 1                        23.00     42.00                6.00
+85                 0                        21.88     49.00                1.00
+86                 1                        35.44     47.25                7.00
+87                 1                        38.50     49.00                7.00
+88                 1                        29.69     49.00                6.00
+89                 1                        22.00     21.00                4.00
+90                 1                        30.25     45.50                5.67
+   Gender ZEmployeeCSRimpXCustomCSRsupp ZOrgIDXFit ZAbility_to_construe
+1       1                      -0.03865    0.30558              0.71707
+2       1                       2.17845    0.84899             -0.23895
+3       2                      -1.95842   -1.60957              0.23546
+4       1                      -1.36988   -1.20822             -0.72056
+5       1                      -0.76544    0.84899             -0.48335
+6       1                      -0.12307    0.84899             -0.00175
+7       1                       0.67958    0.71314              1.19867
+8       1                       2.17845    0.84899              1.43588
+9       1                       1.96432    0.03387              1.43588
+10      1                       1.32195    0.30558              0.71707
+11      1                      -0.14632    0.84899             -0.72056
+12      1                       0.72608    0.84899             -0.48335
+13      1                       0.35901    0.84899              0.71707
+14      1                       0.31252    0.48645              0.71707
+15      1                       0.31252    0.84899              1.43588
+16      1                       0.35901    0.48645              0.95427
+17      2                       1.75754    0.71314              1.19867
+18      1                       0.93164    0.30558              1.43588
+19      2                       0.51930    0.16972              1.43588
+20      1                       0.00662    0.44143             -0.48335
+21      1                      -0.78869   -1.14378             -0.72056
+22      1                      -0.14632   -2.02334             -0.72056
+23      1                      -0.83396    0.84899             -0.00175
+24      1                       0.89371    0.84899              1.43588
+25      1                      -0.91105   -2.56675             -0.72056
+26      1                       1.32195    0.27996              0.23546
+27      1                      -1.36988   -2.81905             -0.72056
+28      2                      -0.75810    0.30558             -0.95777
+29      1                      -0.11573    0.71314             -0.23895
+30      1                      -0.32985   -0.47073             -0.00175
+31      1                      -0.51339    0.84899             -0.95777
+32      1                      -0.63575    0.84899             -0.23895
+33      1                       0.72608    0.84899             -0.72056
+34      1                      -0.51339    0.44143             -0.00175
+35      2                       0.89371    0.30558              1.43588
+36      1                       2.17845    0.84899              1.43588
+37      1                      -1.06399    0.30558             -0.72056
+38      1                      -0.39103   -1.09177             -0.72056
+39      1                       0.77135    0.84899              0.23546
+40      1                      -1.75163    0.16972             -0.23895
+41      1                      -0.39103    0.84899             -0.72056
+42      1                       1.96432    0.84899             -0.00175
+43      1                      -0.09983   -2.51474             -0.00175
+44      1                      -0.09983   -1.23384              0.71707
+45      1                      -1.88990    0.84899             -0.72056
+46      1                      -0.47546    0.84899              1.43588
+47      1                       1.96432   -0.23784              1.43588
+48      1                      -1.24753   -1.40229             -0.72056
+49      1                       0.05312    0.84899              1.43588
+50      2                      -0.75810   -1.40229             -0.72056
+51      2                       1.15433   -0.16021              0.71707
+52      1                       1.53608    0.84899              1.43588
+53      1                       2.17845    0.84899              1.43588
+54      1                       0.89371    0.84899             -2.87699
+55      1                      -1.75163   -0.16021             -0.72056
+56      1                       0.03721    0.30558             -1.43937
+57      1                      -1.88256   -1.50554              0.71707
+58      2                       0.25134    0.84899             -0.72056
+59      1                      -1.70636   -1.60957              0.47986
+60      1                       0.25134   -0.10198             -0.00175
+61      2                       0.89371    0.84899              1.43588
+62      2                       0.03721   -0.64540              0.23546
+63      1                       0.31252   -2.00393             -1.92097
+64      1                       1.75020    0.84899              1.43588
+65      1                       0.00662   -0.37369              0.47986
+66      1                       0.89371   -0.10198              1.43588
+67      1                       0.00662    0.44143             -0.72056
+68      1                      -0.95632   -0.39310             -0.72056
+69      1                      -1.21694    0.84899             -0.72056
+70      2                      -0.14632   -0.78125             -0.72056
+71      1                       0.89371    0.84899             -1.43937
+72      1                       1.10783    0.84899             -0.72056
+73      2                      -0.39103    0.03387             -0.00175
+74      1                      -0.23809   -2.17860             -0.00175
+75      1                      -0.03865   -1.44111             -0.72056
+76      2                       0.89371    0.84899              0.71707
+77      2                      -0.92573   -1.49933             -0.72056
+78      1                       1.10783    0.84899              1.43588
+79      2                      -0.14632   -1.55756             -0.23895
+80      1                       1.10783    0.84899              1.43588
+81      2                      -0.75810   -0.62599             -0.48335
+82      1                       0.89371    0.84899              0.71707
+83      2                      -0.75810   -2.00393             -0.72056
+84      1                      -1.00281    0.30558              0.71707
+85      2                      -1.13985    0.84899             -2.87699
+86      2                       0.51930    0.71314              1.43588
+87      2                       0.89371    0.84899              1.43588
+88      1                      -0.18425    0.84899              0.71707
+89      2                      -1.12517   -1.32466             -0.72056
+90      1                      -0.11573    0.57728              0.47986
+   Gender.f
+1         1
+2         1
+3         2
+4         1
+5         1
+6         1
+7         1
+8         1
+9         1
+10        1
+11        1
+12        1
+13        1
+14        1
+15        1
+16        1
+17        2
+18        1
+19        2
+20        1
+21        1
+22        1
+23        1
+24        1
+25        1
+26        1
+27        1
+28        2
+29        1
+30        1
+31        1
+32        1
+33        1
+34        1
+35        2
+36        1
+37        1
+38        1
+39        1
+40        1
+41        1
+42        1
+43        1
+44        1
+45        1
+46        1
+47        1
+48        1
+49        1
+50        2
+51        2
+52        1
+53        1
+54        1
+55        1
+56        1
+57        1
+58        2
+59        1
+60        1
+61        2
+62        2
+63        1
+64        1
+65        1
+66        1
+67        1
+68        1
+69        1
+70        2
+71        1
+72        1
+73        2
+74        1
+75        1
+76        2
+77        2
+78        1
+79        2
+80        1
+81        2
+82        1
+83        2
+84        1
+85        2
+86        2
+87        2
+88        1
+89        2
+90        1
+
+> s<-read.csv(file="Standard7.csv", header=TRUE, sep=",")
+
+> s$Gender.f<-factor(s$Gender)
+
+> s<-read.csv(file="Standard.csv", header=TRUE, sep=",")
+
+> s$Gender.f<-factor(s$Gender)
+
+> logit <- glm(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, data=s, family = "binomial")
+
+> summary(logit)
+
+Call:
+glm(formula = Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+    OrgIDXFit + Ability_to_construe + Gender.f, family = "binomial", 
+    data = s)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-2.5242   0.2644   0.3410   0.5084   1.0695  
+
+Coefficients:
+                              Estimate Std. Error z value Pr(>|z|)  
+(Intercept)                  -0.671258   1.285206  -0.522   0.6015  
+EmployeeCSRimpXCustomCSRsupp  0.001819   0.046044   0.039   0.9685  
+OrgIDXFit                     0.046908   0.021246   2.208   0.0273 *
+Ability_to_construe           0.288692   0.226525   1.274   0.2025  
+Gender.f2                    -0.794528   0.558439  -1.423   0.1548  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1 
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 103.533  on 139  degrees of freedom
+Residual deviance:  89.157  on 135  degrees of freedom
+AIC: 99.157
+
+Number of Fisher Scoring iterations: 5
+
+> B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s)
+
+> s
+    Bin_CSR_Adap_sell EmployeeCSRimpXCustomCSRsupp OrgIDXFit
+1                   1                        30.88     42.00
+2                   1                        49.00     49.00
+3                   0                        15.19     17.33
+4                   1                        20.00     22.50
+5                   1                        24.94     49.00
+6                   1                        30.19     49.00
+7                   1                        36.75     47.25
+8                   1                        49.00     49.00
+9                   1                        47.25     38.50
+10                  1                        42.00     42.00
+11                  1                        30.00     49.00
+12                  1                        37.13     49.00
+13                  1                        34.13     49.00
+14                  1                        33.75     44.33
+15                  1                        33.75     49.00
+16                  1                        34.13     44.33
+17                  1                        45.56     47.25
+18                  1                        38.81     42.00
+19                  1                        35.44     40.25
+20                  1                        31.25     43.75
+21                  1                        24.75     23.33
+22                  0                        30.00     12.00
+23                  0                        24.38     49.00
+24                  1                        38.50     49.00
+25                  1                        23.75      5.00
+26                  1                        42.00     41.67
+27                  1                        20.00      1.75
+28                  1                        25.00     42.00
+29                  1                        30.25     47.25
+30                  1                        28.50     32.00
+31                  1                        27.00     49.00
+32                  1                        26.00     49.00
+33                  1                        37.13     49.00
+34                  1                        27.00     43.75
+35                  1                        38.50     42.00
+36                  1                        49.00     49.00
+37                  1                        22.50     42.00
+38                  1                        28.00     24.00
+39                  1                        37.50     49.00
+40                  1                        16.88     40.25
+41                  1                        28.00     49.00
+42                  1                        47.25     49.00
+43                  1                        30.38      5.67
+44                  1                        30.38     22.17
+45                  1                        15.75     49.00
+46                  1                        27.31     49.00
+47                  1                        47.25     35.00
+48                  1                        21.00     20.00
+49                  1                        31.63     49.00
+50                  1                        25.00     20.00
+51                  1                        40.63     36.00
+52                  1                        43.75     49.00
+53                  1                        49.00     49.00
+54                  1                        38.50     49.00
+55                  1                        16.88     36.00
+56                  1                        31.50     42.00
+57                  1                        15.81     18.67
+58                  1                        33.25     49.00
+59                  1                        17.25     17.33
+60                  1                        33.25     36.75
+61                  1                        38.50     49.00
+62                  0                        31.50     29.75
+63                  1                        33.75     12.25
+64                  1                        45.50     49.00
+65                  1                        31.25     33.25
+66                  0                        38.50     36.75
+67                  1                        31.25     43.75
+68                  0                        23.38     33.00
+69                  1                        21.25     49.00
+70                  1                        30.00     28.00
+71                  1                        38.50     49.00
+72                  1                        40.25     49.00
+73                  1                        28.00     38.50
+74                  1                        29.25     10.00
+75                  0                        30.88     19.50
+76                  1                        38.50     49.00
+77                  1                        23.63     18.75
+78                  1                        40.25     49.00
+79                  1                        30.00     18.00
+80                  1                        40.25     49.00
+81                  1                        25.00     30.00
+82                  1                        38.50     49.00
+83                  0                        25.00     12.25
+84                  1                        23.00     42.00
+85                  0                        21.88     49.00
+86                  1                        35.44     47.25
+87                  1                        38.50     49.00
+88                  1                        29.69     49.00
+89                  1                        22.00     21.00
+90                  1                        30.25     45.50
+91                  1                        35.75     49.00
+92                  1                        38.50     29.75
+93                  1                        45.56     49.00
+94                  1                        28.50     47.25
+95                  1                        27.50     36.75
+96                  0                        35.44     26.92
+97                  1                        22.00     46.67
+98                  1                        40.25     47.25
+99                  1                        28.13     28.75
+100                 0                        22.00     45.00
+101                 1                        29.69     36.00
+102                 1                        26.13     38.00
+103                 1                        16.00     28.00
+104                 1                        28.75     33.25
+105                 1                        27.00     49.00
+106                 1                        32.81     49.00
+107                 1                        37.13     49.00
+108                 1                        28.00     42.00
+109                 1                        35.75     49.00
+110                 1                        22.50     28.50
+111                 1                        17.00     25.33
+112                 1                        23.00     40.25
+113                 1                        40.63     47.25
+114                 0                        30.00     36.00
+115                 1                        35.75     31.50
+116                 1                        28.00     49.00
+117                 0                        17.06      5.50
+118                 1                        33.25     49.00
+119                 1                        25.31     29.75
+120                 0                        38.50     49.00
+121                 1                        24.00     18.00
+122                 1                        30.00     49.00
+123                 1                        32.81     39.00
+124                 1                        36.75     49.00
+125                 1                        32.81     46.67
+126                 1                        21.00     28.00
+127                 1                        37.13     42.00
+128                 1                        22.00     30.00
+129                 0                        32.81     47.25
+130                 0                        27.00     10.00
+131                 1                        30.19     47.25
+132                 1                        36.75     42.00
+133                 1                        33.25     49.00
+134                 0                        23.44      1.00
+135                 1                        31.50     24.00
+136                 1                        38.50     49.00
+137                 1                        36.00     42.00
+138                 1                        16.00     30.00
+139                 1                        38.50     28.00
+140                 1                        17.88     45.50
+    Ability_to_construe Gender ZEmployeeCSRimpXCustomCSRsupp ZOrgIDXFit
+1                  6.00      1                      -0.03865    0.30558
+2                  4.67      1                       2.17845    0.84899
+3                  5.33      2                      -1.95842   -1.60957
+4                  4.00      1                      -1.36988   -1.20822
+5                  4.33      1                      -0.76544    0.84899
+6                  5.00      1                      -0.12307    0.84899
+7                  6.67      1                       0.67958    0.71314
+8                  7.00      1                       2.17845    0.84899
+9                  7.00      1                       1.96432    0.03387
+10                 6.00      1                       1.32195    0.30558
+11                 4.00      1                      -0.14632    0.84899
+12                 4.33      1                       0.72608    0.84899
+13                 6.00      1                       0.35901    0.84899
+14                 6.00      1                       0.31252    0.48645
+15                 7.00      1                       0.31252    0.84899
+16                 6.33      1                       0.35901    0.48645
+17                 6.67      2                       1.75754    0.71314
+18                 7.00      1                       0.93164    0.30558
+19                 7.00      2                       0.51930    0.16972
+20                 4.33      1                       0.00662    0.44143
+21                 4.00      1                      -0.78869   -1.14378
+22                 4.00      1                      -0.14632   -2.02334
+23                 5.00      1                      -0.83396    0.84899
+24                 7.00      1                       0.89371    0.84899
+25                 4.00      1                      -0.91105   -2.56675
+26                 5.33      1                       1.32195    0.27996
+27                 4.00      1                      -1.36988   -2.81905
+28                 3.67      2                      -0.75810    0.30558
+29                 4.67      1                      -0.11573    0.71314
+30                 5.00      1                      -0.32985   -0.47073
+31                 3.67      1                      -0.51339    0.84899
+32                 4.67      1                      -0.63575    0.84899
+33                 4.00      1                       0.72608    0.84899
+34                 5.00      1                      -0.51339    0.44143
+35                 7.00      2                       0.89371    0.30558
+36                 7.00      1                       2.17845    0.84899
+37                 4.00      1                      -1.06399    0.30558
+38                 4.00      1                      -0.39103   -1.09177
+39                 5.33      1                       0.77135    0.84899
+40                 4.67      1                      -1.75163    0.16972
+41                 4.00      1                      -0.39103    0.84899
+42                 5.00      1                       1.96432    0.84899
+43                 5.00      1                      -0.09983   -2.51474
+44                 6.00      1                      -0.09983   -1.23384
+45                 4.00      1                      -1.88990    0.84899
+46                 7.00      1                      -0.47546    0.84899
+47                 7.00      1                       1.96432   -0.23784
+48                 4.00      1                      -1.24753   -1.40229
+49                 7.00      1                       0.05312    0.84899
+50                 4.00      2                      -0.75810   -1.40229
+51                 6.00      2                       1.15433   -0.16021
+52                 7.00      1                       1.53608    0.84899
+53                 7.00      1                       2.17845    0.84899
+54                 1.00      1                       0.89371    0.84899
+55                 4.00      1                      -1.75163   -0.16021
+56                 3.00      1                       0.03721    0.30558
+57                 6.00      1                      -1.88256   -1.50554
+58                 4.00      2                       0.25134    0.84899
+59                 5.67      1                      -1.70636   -1.60957
+60                 5.00      1                       0.25134   -0.10198
+61                 7.00      2                       0.89371    0.84899
+62                 5.33      2                       0.03721   -0.64540
+63                 2.33      1                       0.31252   -2.00393
+64                 7.00      1                       1.75020    0.84899
+65                 5.67      1                       0.00662   -0.37369
+66                 7.00      1                       0.89371   -0.10198
+67                 4.00      1                       0.00662    0.44143
+68                 4.00      1                      -0.95632   -0.39310
+69                 4.00      1                      -1.21694    0.84899
+70                 4.00      2                      -0.14632   -0.78125
+71                 3.00      1                       0.89371    0.84899
+72                 4.00      1                       1.10783    0.84899
+73                 5.00      2                      -0.39103    0.03387
+74                 5.00      1                      -0.23809   -2.17860
+75                 4.00      1                      -0.03865   -1.44111
+76                 6.00      2                       0.89371    0.84899
+77                 4.00      2                      -0.92573   -1.49933
+78                 7.00      1                       1.10783    0.84899
+79                 4.67      2                      -0.14632   -1.55756
+80                 7.00      1                       1.10783    0.84899
+81                 4.33      2                      -0.75810   -0.62599
+82                 6.00      1                       0.89371    0.84899
+83                 4.00      2                      -0.75810   -2.00393
+84                 6.00      1                      -1.00281    0.30558
+85                 1.00      2                      -1.13985    0.84899
+86                 7.00      2                       0.51930    0.71314
+87                 7.00      2                       0.89371    0.84899
+88                 6.00      1                      -0.18425    0.84899
+89                 4.00      2                      -1.12517   -1.32466
+90                 5.67      1                      -0.11573    0.57728
+91                 4.33      1                       0.55723    0.84899
+92                 5.67      1                       0.89371   -0.64540
+93                 6.00      1                       1.75754    0.84899
+94                 4.67      1                      -0.32985    0.71314
+95                 5.00      2                      -0.45221   -0.10198
+96                 5.00      1                       0.51930   -0.86509
+97                 5.33      1                      -1.12517    0.66811
+98                 6.00      1                       1.10783    0.71314
+99                 5.33      1                      -0.37513   -0.72303
+100                4.00      1                      -1.12517    0.53847
+101                6.00      1                      -0.18425   -0.16021
+102                6.00      1                      -0.61984   -0.00495
+103                7.00      1                      -1.85931   -0.78125
+104                4.00      1                      -0.29927   -0.37369
+105                4.00      1                      -0.51339    0.84899
+106                5.00      1                       0.19750    0.84899
+107                5.67      1                       0.72608    0.84899
+108                1.00      1                      -0.39103    0.30558
+109                5.33      2                       0.55723    0.84899
+110                4.00      2                      -1.06399   -0.74244
+111                4.00      2                      -1.73695   -0.98852
+112                4.00      2                      -1.00281    0.16972
+113                5.67      2                       1.15433    0.71314
+114                5.00      2                      -0.14632   -0.16021
+115                6.00      2                       0.55723   -0.50954
+116                4.00      2                      -0.39103    0.84899
+117                1.00      2                      -1.72961   -2.52794
+118                4.00      2                       0.25134    0.84899
+119                4.00      1                      -0.72017   -0.64540
+120                6.00      2                       0.89371    0.84899
+121                4.00      2                      -0.88046   -1.55756
+122                4.00      2                      -0.14632    0.84899
+123                4.00      2                       0.19750    0.07268
+124                6.00      2                       0.67958    0.84899
+125                4.67      2                       0.19750    0.66811
+126                4.00      2                      -1.24753   -0.78125
+127                5.00      2                       0.72608    0.30558
+128                6.00      2                      -1.12517   -0.62599
+129                3.67      2                       0.19750    0.71314
+130                4.00      2                      -0.51339   -2.17860
+131                4.00      2                      -0.12307    0.71314
+132                6.33      2                       0.67958    0.30558
+133                7.00      2                       0.25134    0.84899
+134                4.00      2                      -0.94898   -2.87727
+135                6.00      2                       0.03721   -1.09177
+136                7.00      2                       0.89371    0.84899
+137                4.33      2                       0.58782    0.30558
+138                1.00      2                      -1.85931   -0.62599
+139                4.67      2                       0.89371   -0.78125
+140                4.33      1                      -1.62928    0.57728
+    ZAbility_to_construe Gender.f
+1                0.71707        1
+2               -0.23895        1
+3                0.23546        2
+4               -0.72056        1
+5               -0.48335        1
+6               -0.00175        1
+7                1.19867        1
+8                1.43588        1
+9                1.43588        1
+10               0.71707        1
+11              -0.72056        1
+12              -0.48335        1
+13               0.71707        1
+14               0.71707        1
+15               1.43588        1
+16               0.95427        1
+17               1.19867        2
+18               1.43588        1
+19               1.43588        2
+20              -0.48335        1
+21              -0.72056        1
+22              -0.72056        1
+23              -0.00175        1
+24               1.43588        1
+25              -0.72056        1
+26               0.23546        1
+27              -0.72056        1
+28              -0.95777        2
+29              -0.23895        1
+30              -0.00175        1
+31              -0.95777        1
+32              -0.23895        1
+33              -0.72056        1
+34              -0.00175        1
+35               1.43588        2
+36               1.43588        1
+37              -0.72056        1
+38              -0.72056        1
+39               0.23546        1
+40              -0.23895        1
+41              -0.72056        1
+42              -0.00175        1
+43              -0.00175        1
+44               0.71707        1
+45              -0.72056        1
+46               1.43588        1
+47               1.43588        1
+48              -0.72056        1
+49               1.43588        1
+50              -0.72056        2
+51               0.71707        2
+52               1.43588        1
+53               1.43588        1
+54              -2.87699        1
+55              -0.72056        1
+56              -1.43937        1
+57               0.71707        1
+58              -0.72056        2
+59               0.47986        1
+60              -0.00175        1
+61               1.43588        2
+62               0.23546        2
+63              -1.92097        1
+64               1.43588        1
+65               0.47986        1
+66               1.43588        1
+67              -0.72056        1
+68              -0.72056        1
+69              -0.72056        1
+70              -0.72056        2
+71              -1.43937        1
+72              -0.72056        1
+73              -0.00175        2
+74              -0.00175        1
+75              -0.72056        1
+76               0.71707        2
+77              -0.72056        2
+78               1.43588        1
+79              -0.23895        2
+80               1.43588        1
+81              -0.48335        2
+82               0.71707        1
+83              -0.72056        2
+84               0.71707        1
+85              -2.87699        2
+86               1.43588        2
+87               1.43588        2
+88               0.71707        1
+89              -0.72056        2
+90               0.47986        1
+91              -0.48335        1
+92               0.47986        1
+93               0.71707        1
+94              -0.23895        1
+95              -0.00175        2
+96              -0.00175        1
+97               0.23546        1
+98               0.71707        1
+99               0.23546        1
+100             -0.72056        1
+101              0.71707        1
+102              0.71707        1
+103              1.43588        1
+104             -0.72056        1
+105             -0.72056        1
+106             -0.00175        1
+107              0.47986        1
+108             -2.87699        1
+109              0.23546        2
+110             -0.72056        2
+111             -0.72056        2
+112             -0.72056        2
+113              0.47986        2
+114             -0.00175        2
+115              0.71707        2
+116             -0.72056        2
+117             -2.87699        2
+118             -0.72056        2
+119             -0.72056        1
+120              0.71707        2
+121             -0.72056        2
+122             -0.72056        2
+123             -0.72056        2
+124              0.71707        2
+125             -0.23895        2
+126             -0.72056        2
+127             -0.00175        2
+128              0.71707        2
+129             -0.95777        2
+130             -0.72056        2
+131             -0.72056        2
+132              0.95427        2
+133              1.43588        2
+134             -0.72056        2
+135              0.71707        2
+136              1.43588        2
+137             -0.48335        2
+138             -2.87699        2
+139             -0.23895        2
+140             -0.48335        1
+
+> B
+Call:
+glmRob(formula = Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+    OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, 
+    data = s)
+
+Coefficients:
+                 (Intercept) EmployeeCSRimpXCustomCSRsupp 
+                   -0.587825                    -0.003638 
+                   OrgIDXFit          Ability_to_construe 
+                    0.050777                     0.260586 
+                   Gender.f2 
+                   -0.651639 
+
+Degrees of Freedom: 140 Total; 135 Residual
+Residual Deviance: 89.29 
+
+> summary(B)
+
+Call: glmRob(formula = Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + 
+    OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, 
+    data = s)
+Deviance Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.5131  0.2788  0.3451  0.5036  0.9852 
+
+Coefficients:
+                              Estimate Std. Error  z value Pr(>|z|)
+(Intercept)                  -0.587825    1.28626 -0.45700  0.64767
+EmployeeCSRimpXCustomCSRsupp -0.003638    0.04607 -0.07898  0.93705
+OrgIDXFit                     0.050777    0.02140  2.37317  0.01764
+Ability_to_construe           0.260586    0.23273  1.11968  0.26285
+Gender.f2                    -0.651639    0.55886 -1.16602  0.24361
+
+(Dispersion Parameter for binomial family taken to be 1 )
+
+    Null Deviance: 194.1 on 139 degrees of freedom
+
+Residual Deviance: 89.29289 on 135 degrees of freedom
+
+Number of Iterations: 5 
+
+Correlation of Coefficients:
+                             (Intercept) EmployeeCSRimpXCustomCSRsupp OrgIDXFit
+EmployeeCSRimpXCustomCSRsupp -0.509357                                         
+OrgIDXFit                    -0.053512   -0.410807                             
+Ability_to_construe          -0.403284   -0.391988                    -0.044347
+Gender.f2                    -0.341609    0.071692                    -0.001463
+                             Ability_to_construe
+EmployeeCSRimpXCustomCSRsupp                    
+OrgIDXFit                                       
+Ability_to_construe                             
+Gender.f2                     0.052396 
+
+
+
+#Bootstrap
+
+s<-read.csv(file="Standard.csv", header=TRUE, sep=",")
+
+s$Gender.f<-factor(s$Gender)
+
+logit <- glm(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, data=s, family = "binomial")
+
+summary(logit)
+
+library(robust)
+
+B<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s, method="mallows")
+
+summary(B)
+
+c<-glmRob(Bin_CSR_Adap_sell ~ EmployeeCSRimpXCustomCSRsupp + OrgIDXFit + Ability_to_construe + Gender.f, family = binomial, data=s, method="misclass")
+
+summary(c)
+
+library(car)
+
+First<-Boot(logit,R=999, method="case")
+
+summary(First)
+
+confint(First)
